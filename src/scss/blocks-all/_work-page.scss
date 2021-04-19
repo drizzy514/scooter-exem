@@ -1,0 +1,113 @@
+.work-page h1{
+    text-align: center;
+    font-size: 48px;
+    color: #495567;
+    margin-top: 120px;
+}
+
+.work-page__how-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-page__list{
+    @include lists;
+    width: 730px;
+}
+.work-page__item p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    color: #495567;
+    display: none;
+}
+.work-page__item h3{
+    color: #495567;
+
+}
+.work-page__item:hover{
+    background-color: #FFF4DF;
+}
+.work-page__item{
+    background-color: #F2F5F9;
+    padding: 32px 40px;
+    margin-top: 16px;
+    position: relative;
+}
+.menu-btn{
+    position: absolute;
+    background: url(../../img/open-close.svg) no-repeat center center ;
+    
+    width: 16px;
+    height: 8px;
+    right: 0;
+    top: 30%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.question-btn{
+    position: absolute;
+    background: url(../../img/open-close.svg) no-repeat center center ;
+    
+    width: 16px;
+    height: 8px;
+    right: 0;
+    top: 30%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.work-page__how-work h2{
+    width: 350px;
+   margin: 0;
+   color: #495567;
+   margin-bottom: 453px;
+}
+.text.text-active{
+    display: block;
+}
+.menu-btn.text-active{
+    background: url(../../img/close-open.svg) no-repeat center;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    right: 0;
+    top: 30%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.question-btn.text-active{
+    background: url(../../img/close-open.svg) no-repeat center;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    right: 0;
+    top: 30%;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.desc.text-active{
+    display: block;
+}
+@media screen and (max-width:1106px){
+    .work-page__how-work {
+       flex-direction: column;
+    }
+    .work-page__how-work h2{
+        margin-bottom: 0;
+        margin-left: 183px;
+    }
+}
+// mobile
+@media screen and (max-width:690px){
+   
+    .work-page__item{
+        width: 311px;
+    margin-left:173px;  
+    }
+   
+}

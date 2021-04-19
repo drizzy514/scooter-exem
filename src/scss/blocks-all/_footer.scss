@@ -1,0 +1,64 @@
+.footer{
+    background-color: #333A44;
+    padding: 35px 168px;
+  
+}
+.footer__list{
+    @include lists;
+    display: flex;
+    align-items: center;
+margin-left: 58px;
+}
+.footer__item{
+    margin-right: 32px;
+}
+.footer--container{
+    display: flex;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+}
+.footer__social-list{
+    @include lists;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.footer__social-item{
+    margin-right: 24px;
+   
+}
+
+.icon-instagram:hover{
+    color: #fff;
+}
+    
+
+.footer__social-item:last-child{
+    margin-right:0;
+}
+@media screen and(max-width:1106px){
+.footer{
+    padding: 35px 39px;
+}
+}
+// mobile
+@media screen and (max-width:690px){
+    .footer{
+        width: 361px;
+        margin: 0 auto;
+    }
+    .footer--container{
+        flex-direction: column;
+    }
+    .footer__list{
+        flex-direction: column;
+        margin-left: 35px;
+    }
+    .footer__item{
+        margin-bottom: 16px;
+    }
+    .footer__social-list{
+        margin-left: 0;
+    }
+}
